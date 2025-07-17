@@ -1,0 +1,147 @@
+body{
+    
+    
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+.blurr-elements{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(95, 89, 89);
+    transition: filter 0.4s;
+    z-index: 1;
+    overflow: scroll;
+}
+
+.blurr-elements.blurr{
+    filter: blur(5px);
+    
+    transition: filter 0.4;
+}
+
+h1{
+    align-self: center;
+    font-size: 50px;
+    color: aliceblue;
+}
+
+#new-book{
+    background-color: blueviolet;
+    border-style: none;
+    width: max(10%, 100x);
+    min-height: max(10%, 70px);
+    font-size: large;
+    color: aliceblue;
+    font-weight: 700;
+    align-self: center;
+}
+
+
+#new-book:hover, #submit-btn:hover{
+    background-color: aliceblue;
+    color: blueviolet;
+    border-color: blueviolet;
+    border-style: solid;
+}
+
+form{
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-top: 15%;
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 20%;
+    height: 50%;
+    padding: 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s;
+    
+    
+}
+
+form.visible{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.2;
+   
+}
+
+label{
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+input{
+    border-color: blueviolet;
+    border-style: solid;
+    border-radius: 5px;
+    height: 10%;
+    outline: none;
+}
+
+input:focus{
+    border-style: solid;
+    border-color: blueviolet;
+    box-shadow: 2px 2px 5px rgba(138, 43, 226, 0.7);
+}
+
+#ckeckbox-container{
+    display: flex;
+    
+    align-items: center;
+}
+
+
+
+#checkbox{
+    width: 16px;
+    height: 16px;
+    margin-top: 6%;
+    margin-left: 5%;
+    
+}
+
+
+#submit-btn{
+    align-self: flex-end;
+    margin-top: auto;
+    width: 35%;
+    height: 12%;
+    background-color: blueviolet;
+    border-style: none;
+    font-size: large;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.greed-library{
+    display: grid;
+    box-sizing: border-box;
+    padding: 1%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 3%;
+    gap: 5%;
+}
+
+.book-card{
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
